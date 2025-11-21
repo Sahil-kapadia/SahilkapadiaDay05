@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card" id="dashboard">
+        <header>
+            <div class="title">Personal Dashboard</div>
+            <div class="theme-buttons">
+                <button id="btn-day" title="Day Mode">☀️</button>
+                <button id="btn-night" title="Night Mode">🌙</button>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="clockWrap">
+                <div class="clock" id="time">00:00:00 <small id="ampm">AM</small></div>
+
+                <div class="cards">
+                    <div class="quote-card">
+                        <div>
+                            <p id="quote-text">"Make Each Day A Master Piece."</p>
+                            <cite id="quote-author">-- Author</cite>
+                        </div>
+                    </div>
+
+                    <div class="card-box skeleton-bar">
+                        <select id="timezone-select">
+                            <option value="local">Local Time</option>
+                            <option value="UTC">UTC</option>
+                            <option value="Asia/Kolkata">Asia/Kolkata (IST)</option>
+                            <option value="America/New_York">New York (EST)</option>
+                            <option value="Europe/London">London (GMT)</option>
+                            <option value="Asia/Dubai">Dubai (GST)</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="card-box todo">
+                    <h3>To-Do List</h3>
+                    <div class="todo-list" id="todo-list"></div>
+
+                    <div class="todo-controls">
+                        <input type="text" id="todo-input" placeholder="Add a new task...">
+                        <button class="btn btn-add" id="add-btn">+ Add</button>
+                    </div>
+
+                    <div class="btn-clear-wrap">
+                        <button class="btn btn-clear" id="clear-btn">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">Small and Elegant Dashboard - Responsive and theme aware</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
